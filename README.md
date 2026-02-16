@@ -29,12 +29,32 @@ The system uses a unified `LLMClient` to interface with either OpenAI's GPT-4o o
 
 Packaging the agent in Docker ensures a consistent environment.
 
+#### Method A: Pull from Docker Hub (Fastest)
+
+The image is available on Docker Hub: [saitarunmarikal/agentic-game-builder](https://hub.docker.com/r/saitarunmarikal/agentic-game-builder)
+
+1.  **Pull the image:**
+    ```bash
+    docker pull saitarunmarikal/agentic-game-builder:latest
+    ```
+
+2.  **Run the container:**
+    ```bash
+    # Using .env file (Recommended)
+    docker run -it --env-file .env -v ${PWD}/output:/app/output saitarunmarikal/agentic-game-builder:latest
+    
+    # OR manually passing the key
+    docker run -it -e GEMINI_API_KEY=your_key -v ${PWD}/output:/app/output saitarunmarikal/agentic-game-builder:latest
+    ```
+
+#### Method B: Build from Source
+
 1.  **Build the Docker image:**
     ```bash
     docker build -t game-builder .
     ```
 
-2.  **Run the container:**
+2.  **Run the built image:**
     You must pass your API key as an environment variable and mount a volume to retrieve the generated files.
 
     **For OpenAI Users:**
