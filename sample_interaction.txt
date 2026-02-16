@@ -1,0 +1,37 @@
+=========================================
+      SAMPLE INTERACTION: SPACE DODGER
+=========================================
+
+1. [INITIAL PROMPT - COPY THIS AND PASTE WHEN AGENT STARTS]
+------------------------------------------------------------
+I want a simple game where I control a green square at the bottom of the screen using the Left and Right Arrow keys.
+Red circles fall from the top of the screen at random horizontal positions.
+The goal is to avoid the red circles.
+If a red circle touches the green square, the game is over and shows "Game Over" with a restart button.
+The score increases by 1 for every red circle that goes off the bottom of the screen.
+The game should run in a loop with the score displayed in the top left corner.
+------------------------------------------------------------
+
+
+2. [EXPECTED AGENT FOLLOW-UP QUESTION (EXAMPLE)]
+------------------------------------------------------------
+AI: Do the circles fall faster as the score increases?
+AI: What size is the player?
+------------------------------------------------------------
+
+
+3. [YOUR ANSWER - COPY THIS IF ASKED]
+------------------------------------------------------------
+Yes, increase the speed every 10 points. The player is 30x30 pixels.
+------------------------------------------------------------
+
+
+4. [EXPECTED OUTPUT]
+------------------------------------------------------------
+The agent will generate 3 files in the 'output' folder:
+- index.html
+- style.css
+- game.js
+
+Open 'output/index.html' in your browser to play.
+------------------------------------------------------------

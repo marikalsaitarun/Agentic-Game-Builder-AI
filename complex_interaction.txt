@@ -1,0 +1,53 @@
+=========================================
+      COMPLEX INTERACTION: GRAVITY RUNNER
+=========================================
+
+1. [INITIAL PROMPT - COPY THIS AND PASTE WHEN AGENT STARTS]
+------------------------------------------------------------
+I want to create a physics-based puzzle platformer called "Gravity Runner".
+The player controls a blue square character that can move left/right and jump.
+The game should feature:
+- Gravity that pulls the player down.
+- Platforms to jump on.
+- Spikes that kill the player on contact (restart level).
+- Coins to collect (score increases by 10).
+- A locked door at the end of the level that requires a key to open.
+- A "key" item placed somewhere in the level.
+- A simple enemy that patrols back and forth on a platform.
+- When the player reaches the open door, show a "Level Complete" screen.
+- Use simple geometric shapes ensuring a clean, modern aesthetic with a dark background.
+------------------------------------------------------------
+
+
+2. [EXPECTED AGENT FOLLOW-UP QUESTIONS (EXAMPLE)]
+------------------------------------------------------------
+AI: Should the player have a double jump ability?
+AI: How many lives does the player have, or is it instant death?
+AI: Should the level layout be random or predefined?
+------------------------------------------------------------
+
+
+3. [YOUR ANSWERS - COPY THIS IF ASKED]
+------------------------------------------------------------
+1. Yes, add a double jump mechanic.
+2. Instant death on spikes or enemy contact, but infinite retries.
+3. Create a single, well-designed predefined level layout that demonstrates all mechanics (platforms, spikes, enemy, key, door).
+------------------------------------------------------------
+
+
+4. [EXPECTED COMPLEX OUTPUT LOGIC]
+------------------------------------------------------------
+The agent should generate:
+- A Game Loop (requestAnimationFrame)
+- A Physics Engine (velocity, friction, gravity, collision detection)
+- Entity Classes (Player, Platform, Enemy, Collectible)
+- State Management (Menu -> Playing -> Game Over / Win)
+- A defined Level Map (likely an array of strings or objects)
+
+Files generated:
+- index.html (Canvas setup)
+- style.css (Modern dark theme, UI styling)
+- game.js (Complex logic, classes, event listeners)
+
+Open 'output/index.html' to play.
+------------------------------------------------------------
